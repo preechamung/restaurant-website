@@ -1,26 +1,60 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
   }
-  body {
-    color: white;
-    background: black;
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@layer components {
+  .section_container {
+    @apply lt-xs:py-16 lt-xs:px-8 lt-sm:py-16 lt-sm:px-8 lt-md:p-16 py-16 px-24
+  }
+
+  .p__opensans {
+    @apply text-white font-alt my-8 font-normal tracking-wider leading-7 text-[16px] 3xl:text-[30px] 3xl:leading-[50px] lt-sm:text-[14px] lt-sm:text-[12px]
+  }
+
+  .custom__button {
+    @apply w-fit bg-crimson font-base font-bold tracking-wider leading-7 text-base py-2 px-6 rounded-[1px] border-none outline-none cursor-pointer 3xl:text-[37px] 3xl:leading-[67px]
   }
 }

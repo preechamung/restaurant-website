@@ -22,6 +22,9 @@ module.exports = {
       'lt-xs': { max: '450px' },
     },
     extend: {
+      backgroundImage: {
+        'gericht': "url('/bg.png')",
+      },
       colors: {
         golden: "#DCCA87",
         black: "#0C0C0C",

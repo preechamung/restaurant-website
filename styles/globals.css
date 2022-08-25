@@ -59,7 +59,7 @@ a {
   }
 
   .gericht__bg {
-    @apply bg-[url('../assets/bg.png')] bg-cover bg-repeat bg-fixed bg-[left_calc(50%)_top_calc(50%)]
+    @apply bg-cover bg-repeat bg-fixed bg-[left_calc(50%)_top_calc(50%)]
   }
 
   .flex__center {

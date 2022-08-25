@@ -3,7 +3,7 @@ import images from '../constants/images'
 import tw from 'tailwind-styled-components'
 
 const About = () => (
-    <div className='relative flex__center gericht__bg section__container'>
+    <div className='relative flex__center gericht__bg bg-gericht section__container'>
         <div className='flex__center absolute'>
             <img src={images.G.src} alt="G_overlay" className='w-[391] h-[415px] z-0' />
         </div>

@@ -4,7 +4,7 @@ import images from '../constants/images'
 import SubHeading from './SubHeading'
 
 const Header = () => (
-    <div className={`flex flex-col lg:flex-row bg-black justify-between min-h-screen items-center section__container`}>
+    <div className='section__container min-h-screen'>
         <div className='flex flex-col justify-start flex-1'>
             <SubHeading title="Chase the new flavour" />
             <HeaderTitle>The Key To Fine Dining</HeaderTitle>

@@ -47,7 +47,7 @@ a {
 
 @layer components {
   .section__container {
-    @apply py-16 px-24 lt-xs:px-8 lt-sm:px-8 lt-md:px-16 
+    @apply flex flex-col lg:flex-row bg-black justify-between items-center py-16 px-24 lt-xs:px-8 lt-sm:px-8 lt-md:px-16 
   }
 
   .p__opensans {
@@ -64,5 +64,17 @@ a {
 
   .flex__center {
     @apply flex justify-center items-center
+  }
+
+  .headtext__cormorant {
+    @apply font-base text-golden text-[64px] leading-[83px] tracking-wider capitalize lt-xs:text-[45px] lt-xs:leading-[70px] font-bold
+  }
+
+  .p__cormorant {
+    @apply font-base font-bold text-[23px] text-white 3xl:text-[37px] 3xl:leading-[67px] leading-7 capitalize
+  }
+
+  .menu__heading {
+    @apply font-base font-semibold text-[45px] leading-[58px] tracking-wider text-white
   }
 }
